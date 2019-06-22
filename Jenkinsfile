@@ -4,19 +4,19 @@ pipeline {
         maven 'localmaven'
     }
     stages {
-        stage('build') {
+        stage('buildStage') {
             steps {
                 echo "Building a maven project........!"
                 sh 'mvn compile'
             }
         }
-        stage('test') {
+        stage('testingCode') {
             steps {
                 echo "Testing........!"
                 sh 'mvn test'
             }
         }
-        stage('Clean up') {
+        stage('Clean up the Environment') {
             steps {
                 echo "Cleaning up........!"
                 cleanWs()
