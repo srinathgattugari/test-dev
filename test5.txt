@@ -1,2 +1,2 @@
 This line was added on GitHub
-this line was added after the conflict was removed
+This file was edited to show Polling SCM option on Jenkins
